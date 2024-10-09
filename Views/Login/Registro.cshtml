@@ -1,0 +1,179 @@
+﻿@{
+    Layout = null;
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<script src='https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js'></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+<div class="row d-flex align-items-center justify-content-center">
+    <div class="col-md-4 card p-3" style="background-color: lightblue;border-color: black;background-color: lightblue;border-color: black;box-shadow: 3px 3px #006180, -1em 0 2.4em #006180;">
+        <div class="fs-2 mb-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16" style="position: relative;left: 144px;top: 50;">
+                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"></path>
+              </svg>
+              <h1 class="text-center">REGISTRO</h1>
+        </div>
+
+        <div class="text-danger"></div>
+
+        <h5 class="control-label" style="height: 22px;"><b>Nombre</b><label style="color:red">*</label></h5>
+
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                    <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5"></path>
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                </svg>
+            </span>
+            <input class="form-control" id="NameCliente" placeholder="Ingrese un identificador" required />
+        </div>
+        <br />
+        <h5 class="control-label" style="height: 22px;"><b>Cedula</b><label style="color:red">*</label></h5>
+        <div class="mb-1 input-group">
+            <span class="input-group-text" id="basic-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
+                </svg>
+            </span>
+            <input class="form-control" id="CedulaCliente" placeholder="Ingrese el usuario" required />
+        </div>
+        <br />
+        <h5 class="control-label" style="height: 22px;"><b>Correo</b><label style="color:red">*</label></h5>
+        <div class="mb-1 input-group">
+            <span class="input-group-text" id="basic-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" fill="currentColor" class="bi bi-unlock-fill" viewBox="0 0 16 16">
+                    <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2"></path>
+                </svg>
+            </span>
+            <input class="form-control" id="CorreoCliente" placeholder="Ingrese la contraseña" required />
+        </div>
+        <h5 class="control-label" style="height: 22px;"><b>Contraseña</b><label style="color:red">*</label></h5>
+        <div class="mb-1 input-group">
+            <span class="input-group-text" id="basic-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="40" fill="currentColor" class="bi bi-unlock-fill" viewBox="0 0 16 16">
+                    <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2"></path>
+                </svg>
+            </span>
+            <input class="form-control" id="PasswordCliente" placeholder="Ingrese la contraseña" required />
+        </div>
+        <div class="row" id="botonesprincipal">
+            <div class="col-6">
+                <button type="button" class="btn btn-primary btn-sm m-1 button5" id="RegistrarUsuario" onclick="RegistrarUsuario();" style="width: 50%;height: 99%;position: relative;top: 6px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"></path>
+                    </svg>
+                    <FONT SIZE=4>Registrar</font>
+                </button>
+                @* <button type="button" class="btn btn-primary btn-sm m-1" id="RegistrarUsuario" onclick="RegistrarUsuario();" style="width: 50%;height: 99%;position: relative;top: 6px;">Registrar</button> *@
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-primary button5" id="Regresar" onclick="RegresarUsu();" style="width: 50%;height: 99%;position: relative;top: 6px;left: 109px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-house-up-fill" viewBox="0 0 16 16">
+                  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 1 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.707l1.5-1.5a.5.5 0 0 1 .708 0Z"></path>
+                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"></path>
+                  <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293z"></path>
+                </svg>
+                <FONT SIZE=4>Regresar</font>
+              </button>
+                @* <button type="button" class="btn btn-primary btn-sm m-1" id="Regresar" onclick="RegresarUsu();" style="width: 50%;height: 99%;position: relative;top: 6px;left: 109px;">Regresar</button> *@
+            </div>
+        </div>
+        <div class="row" id="botonesSecundarios" style="display:none">
+            <div class="col-6">
+                <button type="button" class="btn btn-primary btn-sm m-1 button5" id="ActualizarUsuario" onclick="ActualizarEUsuario();" style="width: 50%;height: 99%;position: relative;top: 6px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-highlighter" viewBox="0 0 16 16"  style="position: relative;left: -4px;top: -1px;">
+                   		<path fill-rule="evenodd" d="M11.096.644a2 2 0 0 1 2.791.036l1.433 1.433a2 2 0 0 1 .035 2.791l-.413.435-8.07 8.995a.5.5 0 0 1-.372.166h-3a.5.5 0 0 1-.234-.058l-.412.412A.5.5 0 0 1 2.5 15h-2a.5.5 0 0 1-.354-.854l1.412-1.412A.5.5 0 0 1 1.5 12.5v-3a.5.5 0 0 1 .166-.372l8.995-8.07zm-.115 1.47L2.727 9.52l3.753 3.753 7.406-8.254zm3.585 2.17.064-.068a1 1 0 0 0-.017-1.396L13.18 1.387a1 1 0 0 0-1.396-.018l-.068.065zM5.293 13.5 2.5 10.707v1.586L3.707 13.5z"></path>
+                    </svg>
+                    <FONT SIZE=4>Actualizar</font>
+                </button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-dark btn-sm m-1 button5" id="CancelarUsu" onclick="CancelarActualizacion();" style="width: 50%;height: 99%;position: relative;top: 6px;left: 109px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
+                </svg>
+                <FONT SIZE=4>Cancelar</font>
+                </button>
+            </div>
+        </div>
+
+        <br />
+         <svg class="d-none" xmlns="http://www.w3.org/2000/svg">
+                    <symbol id="check-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z">
+                        </path>
+                    </symbol>
+                    <symbol id="info-fill" viewBox="0 0 16 16">
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z">
+                        </path>
+                    </symbol>
+                    <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                        </path>
+                    </symbol>
+         </svg>
+
+        <div id="AlertRegistrar"></div>
+    </div>
+</div>
+
+
+<br />
+<br />
+
+<center><h3><label style="color:red; display:none" id="LabelUsuario">No hay registros creados</label></h3></center>
+
+<div class="fs-2 mb-3" id="LabelEntidadUsuario">
+    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-fill-check" viewBox="0 0 16 16" style="position: relative;left: 689px;" id="SVGRegistro">
+        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+        <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"></path>
+    </svg>  
+    <center><h1><label style="position: relative;top: -50px;left: 39px;">REGISTRO DE USUARIOS</label></h1></center>
+</div>
+<br />
+
+<center>
+    <table class="table table-striped table-hover" style="width: 80%;position: relative;top: -44px;" id="tablaInsertUsuario">
+        <thead>
+            <tr>
+                <th scope="col" style="font-size: 19px;">Nombre</th>
+                <th scope="col" style="font-size: 19px;">Cedula</th>
+                <th scope="col" style="font-size: 19px;">Correo</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody id="TablaInformacionUsuario">
+        </tbody>
+    </table>
+</center>
+
+
+<div class="modal" tabindex="-1" style="display:none" id="ModalEliminarUsu">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Eliminar Usuario:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="TextoEntidadUsu"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" onclick="EliminarEPModalUsu()">Eliminar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<script src="~/js/Registrarse.js"></script>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
